@@ -5,8 +5,7 @@ jobs:
     # Override the environment setup in CodeBuild
     runs-on:
       - codebuild-github-runner-codeconnection-test-${{ github.run_id }}-${{ github.run_attempt }}
-        image:ubuntu-7.0
-        instance-size:small
+        ${{ vars.ADRISE_UBUNTU7_SMALL }}
     steps:
       # Checkout the repository to the GitHub Actions runner
       - name: Checkout
