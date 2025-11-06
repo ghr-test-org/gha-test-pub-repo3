@@ -3,8 +3,7 @@ on: [workflow_dispatch]
 jobs:
   Hello-World-Job:
     # Override the environment setup in CodeBuild
-    runs-on:
-      - ${{ vars.ADRISE_UBUNTU7_SMALL }}
+    runs-on: ${{ vars.ADRISE_UBUNTU7_SMALL }}
     steps:
       # Checkout the repository to the GitHub Actions runner
       - name: Checkout
