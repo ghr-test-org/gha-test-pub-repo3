@@ -20,7 +20,7 @@ jobs:
       - name: check_folder
         run: |
           echo "Hello World"
-          echo "Running on ${{ vars.CODEBUILD_RUNNER }}" 
+          echo "Running on ${{ vars.ADRISE_CODEBUILD_CORRETTO11_IMAGE }}" 
           ls -la
           docker image ls
           cat /etc/os-release
