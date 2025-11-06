@@ -19,6 +19,7 @@ jobs:
       - name: check_folder
         run: |
           echo "Hello World"
+          echo "${{ vars.ADRISE_UBUNTU7_SMALL }}"
           ls -la
       - name: ecr_login
         run: |
