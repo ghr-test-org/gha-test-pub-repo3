@@ -4,6 +4,6 @@ on: [workflow_dispatch]
 
 jobs:
   call_reusable_build:
-    uses: ghr-test-org/.github/workflows/hello-reusable-flow.yml@main # Path to your reusable workflow
+    uses: ghr-test-org/gha-test-repo1/.github/workflows/hello-reusable-flow.yml@main # Path to your reusable workflow
     with:
       build_target: 'frontend' # Pass the desired build target
